@@ -1,0 +1,7 @@
+{% extends 'record/layout.html' %}
+
+{% block body %}
+{% for record in records %}
+    <li><a href="{% url 'result' record.id %}">{{record.regex}}</a></li>
+{% endfor %}
+{% endblock %}

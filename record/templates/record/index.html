@@ -1,0 +1,15 @@
+{%extends 'record/layout.html'%}
+
+{% block body %}
+
+<h2>Welcome to regex testing tool! </h2>
+<form action="" method="post">
+    {% csrf_token %}
+    <input name="regex" type="text">
+    <input name="text" type="text">
+    <input type="submit">
+
+    <a target="_blank" href="/history/">History</a>
+</form>
+
+{% endblock %}
